@@ -1,0 +1,40 @@
+{{define "main"}}
+<article class="post">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="post-title">
+          <h2>{{.Title}}</h2>
+        </div>
+        <div class="post-meta">
+          <p><span>{{ .PublishDate.Format "January 2, 2006" }}</span> em 
+            {{ range (.GetTerms "tags") }}
+              <a class="tags" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+            {{ end }}
+          </p>
+        </div>
+        <div class="post-image">
+          <img src="{{ .Params.featureImage | absURL}}" alt="feature-image">
+        </div>
+        <section style="margin-top: 40px">
+          <div class="row">
+            {{ range .Params.GalleryImage }}
+              <div class="col-md-6">
+                <div class="gallery-item">
+                  <a href="{{ .image | absURL }}" data-source="{{ .image | absURL }}"
+                      title="Exibhition 01">
+                      <img src="{{ .image | absURL }}" alt="gallery-images">
+                  </a>
+                </div>
+              </div>
+            {{end }}
+          </div>
+        </section>
+        <div class="post-body">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{end}}

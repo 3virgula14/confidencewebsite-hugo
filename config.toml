@@ -1,4 +1,73 @@
-baseURL = 'http://hugo-quickstart-template.netlify.com'
+baseURL = 'https://www.construtoraconfidence.com'
 languageCode = 'en-us'
-title = 'Netlify + Hugo Quickstart'
-theme = 'netlify-basic'
+paginate = 6
+theme= "coHub"
+title = 'Construtora Confidence'
+ 
+[Menu]
+  # Main Menu
+  [[menu.Main]]
+  name = "Início"
+  url= ""
+  weight = 1
+  [[menu.Main]]
+  name = "Portfolio"
+  url= "/portfolio"
+  weight = 2
+  [[menu.Main]]
+  name = "Sobre"
+  url= "/about"
+  weight = 3
+
+  # Sitemap Menu
+  [[menu.sitemap]]
+  name = "Privacy Policy"
+  url = "/privacy/"
+  weight = 1
+  [[menu.sitemap]]
+  name = "Terms"
+  url = "/terms/"
+  weight = 2
+
+[params]
+  aboutPageURL = "about"
+  contactLink = "contact"
+  copyright = "© {year} @icaroglauco"
+  fabFormURL =  "https://fabform.io/f/u00kv3-"
+  googleAnalytics = "G-JZ95FEWF9K"
+  logo = "images/logo.svg"
+  footerlogo = "images/logo.svg"
+  footerDescription = "Nós, da Confidence Construtora, acreditamos que a satisfação do cliente é o nosso maior patrimônio.  Para tanto, trabalhamos com afinco em constante capacitação de nossos colaboradores"
+
+  [params.address]
+  address = ""
+  email = "contato@construtoraconfidence.com"
+  openingDesc = ""
+  openingHours = "Estamos disponíveis das 7am — 7pm dias úteis."
+  phone = "(77) 988043876"
+
+  [params.map]
+   APIkey = "AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0"
+  latitude = "-14.8832246"
+  longitude = "-40.8824592"
+   pinImage = "images/pin.png"
+
+  # Socail icons
+  [[params.social]]
+  icon = "ti-facebook"
+  url = "https://www.facebook.com/"
+  weight = 1
+  [[params.social]]
+  icon = "ti-twitter-alt"
+  url = "https://twitter.com/"
+  weight = 2
+  [[params.social]]
+  icon = "ti-dribbble"
+  url = "https://dribbble.com/"
+  weight = 3
+  [[params.social]]
+  icon = "ti-instagram"
+  url = "https://www.instagram.com/"
+  weight = 4
+  
+  
