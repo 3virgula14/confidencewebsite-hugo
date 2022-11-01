@@ -3,8 +3,6 @@ enable: true
 testimonial:
   - author: "Charles Chaplin"
     testimonialDetails: "A persistência é o caminho do êxito."
-  - author: "José de Alencar"
-    testimonialDetails: "O sucesso nasce do querer, da determinação e persistência em se chegar a um objetivo. Mesmo não atingindo o alvo, quem busca e vence obstáculos, no mínimo fará coisas admiráveis."
   - author: " Carlos Drummond de Andrade , \"Avesso das Coisas. Aforismos\""
     testimonialDetails: "Ser feliz sem motivo é a mais autêntica forma de felicidade"  
   - author: "Léon Tolstoi"
