@@ -21,7 +21,13 @@
       {{ range .Paginator.Pages }}
       <div class="col-lg-4">
         <article class="blog-post">
-          <img src="{{ .Params.featureImage | absURL }}" alt="blog-images">
+          {{ if in .Params.featureImage ".mp4" }}
+          <video>
+            <source src="{{ .Params.featureImage | absURL}}" type="video/mp4">
+          </video>
+          {{else}}
+            <img src="{{ .Params.featureImage | absURL}}" alt="feature-image">
+          {{ end }}
           <div class="blog-content">
             <h3><a href="{{ .Permalink }}">{{ .Title}}</a></h3>
             <p> {{truncate 100 .Summary}} </p>
