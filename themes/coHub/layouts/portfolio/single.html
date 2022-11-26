@@ -15,7 +15,13 @@
           </p>
         </div>
         <div class="post-image">
-          <img src="{{ .Params.featureImage | absURL}}" alt="feature-image">
+          {{ if in .Params.featureImage ".mp4" }}
+          <video controls>
+            <source src="{{ .Params.featureImage | absURL}}" type="video/mp4">
+          </video>
+          {{else}}
+            <img src="{{ .Params.featureImage | absURL}}" alt="feature-image">
+          {{ end }}
         </div>
         <section style="margin-top: 40px">
           <div class="row">
