@@ -10,6 +10,11 @@
     display: grid; 
     grid-auto-flow: column; 
     grid-auto-columns: 1fr;
+
+    & .col-md-4.p-2{
+      padding-left: 25px !important;
+      padding-top: 25px !important;
+    }
   
   
   @include mobile {
