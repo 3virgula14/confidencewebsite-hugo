@@ -1,13 +1,18 @@
 .home-cards{
-  padding: 3rem; 
+    
+    padding: 3rem; 
+    &:first-child{
+      padding-bottom: 0rem;
+    }
   
-  @include desktop {
+    
+    grid-gap: 3rem;
     display: grid; 
     grid-auto-flow: column; 
     grid-auto-columns: 1fr;
-  }
   
-  @include tablet {
+  
+  @include mobile {
     display: grid; 
     grid-auto-flow: row; 
     & .col-md-4.p-2{
@@ -19,8 +24,6 @@
       }
     }
   }
-  
-  grid-gap: 15px
 }
 
 .section {
