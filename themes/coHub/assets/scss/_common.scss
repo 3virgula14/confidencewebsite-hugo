@@ -1,3 +1,28 @@
+.home-cards{
+  padding: 3rem; 
+  
+  @include desktop {
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-auto-columns: 1fr;
+  }
+  
+  @include tablet {
+    display: grid; 
+    grid-auto-flow: row; 
+    & .col-md-4.p-2{
+      display: flex;
+      justify-content: center;
+      padding-top: 30px !important;
+      & > img{
+        width: 100px;
+      }
+    }
+  }
+  
+  grid-gap: 15px
+}
+
 .section {
   padding: 100px 0;
   @include desktop {
