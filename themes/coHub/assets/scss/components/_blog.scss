@@ -14,13 +14,13 @@
     @include mobile {
       margin-bottom: 15px;
     }
+    background-color: #fff;
     border: 1px solid #ececec;
     img, video {
       height: 400px;
       margin: 0 auto;
       max-width: 100%;
       object-fit: cover;
-      border-radius: 5px 5px 0 0;
       transition: all .3s ease-in-out;
       &:hover {
         opacity: 0.7;
