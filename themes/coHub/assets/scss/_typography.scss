@@ -4,7 +4,9 @@ body {
   font-family: $secondary-font;
   font-size: 16px;
   color: $text-color;
-  background: $body-color;
+  background-image: url(//www.devmedia.com.br/view/img/grid-light.png?2);
+  background-attachment: fixed;
+  background-color: $body-color;
 }
 
 h1,
