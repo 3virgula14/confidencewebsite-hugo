@@ -6,6 +6,7 @@ tags: ["Barro Alto", "Estádio" ]
 GalleryImage: 
  - image: "images/portfolio/item3 2.jpg"
  - image: "images/portfolio/item3 3.jpg"
+ - image: "images/portfolio/Obra barro alto 3.jpg"
 ---
   ### Construção do estádio Municipal de Barro Alto
 
