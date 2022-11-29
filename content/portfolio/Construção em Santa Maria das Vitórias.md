@@ -6,7 +6,7 @@ GalleryImage:
  - image: "images/portfolio/SANTA MARIA DAS VITORIAS/WhatsApp Image 2022-11-26 at 15.48.52.jpeg"
 tags: ["Santa Maria das Vitórias", "Estádio" ]
 ---
-  ### Construção em Santa Maria das Vitórias
+  ### Reforma de Ginásio de Esportes em Santa Maria das Vitórias
 
   Cliente: Sudesb - Governo do estado da Bahia.\
   Reforma de Ginásio de Esportes em Santa Maria das Vitórias - Bahia\
