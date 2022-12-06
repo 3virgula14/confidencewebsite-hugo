@@ -1,10 +1,32 @@
 {{define "main"}}
   {{ partial "hero.html" . }}
-  <div class="container">
-    <h2 style="margin-inline: 3vw; padding-top: 2em;">Com a Confidence Construtora, garantimos:</h2>
+  
+  <div class="container " style="width: 100vw; max-width: 100vw; margin-top: 15px; margin-bottom: 15px;">
+    <h2 style="color:#e36a13;padding-inline:3vw;padding-top:2em;margin-bottom:30px;color:orange" class="container">Como a Confidence Construtora, valorizamos:</h2>
+    <section class="container" style="padding-bottom: 4em; padding-inline: 3vw; gap: 10px; display: grid;">
+      <p>
+        Ser uma empresa líder em referência no setor da construção civil, atendendo as demandas com uma estrutura competente e otimizada que nos permita enfrentar novos desafios e continuar a superar as expectativas de nossos clientes, possibilitando assim um crescimento sólido e a consequente expansão de nossas atividades.
+      </p>
+      <p>
+        Realizar obras industrias e empreendimentos imobiliários com qualidade e ser na indústria da construção civil, uma empresa referência em qualidade
+      </p>
+    </section>
   </div>
 
-  <div style="margin-bottom: 145px;">
+  <div class="container" style="margin-bottom: 45px;">
+    <p>
+      Você pode conhecer nossos trabalhos através de nosso <a href="/portfolio"><i>portfólio</i></a>
+      <br/>
+      Ou entrar em contato por <a href="mailto:contato@construtoraconfidence.com">email</a> e <a href="tel:+5577988043876">telefone: (77)98804-3876</a>
+    </p>
+
+  </div>
+
+  <div class="bg-dark" style="width: 100vw">
+    <h2 style="margin-inline: 8vw; color: #DFF1F4;  padding-top: 2em;">Com a Confidence Construtora, garantimos:</h2>
+  
+
+  <div style="padding-bottom: 145px; margin-bottom: 100px">
     
     <div class="container home-cards" style="">
       <div class="card mb-3" style="">
@@ -73,34 +95,17 @@
     
     <p class="text-center">
       E muito <i><a href="/about">mais ...</a></i>
+      
     </p>
     
+
   </div>
 
-  <div class="container bg-dark" style="width: 100vw; max-width: 100vw; margin-top: 15px; margin-bottom: 15px;">
-    <h2 style="color:#e36a13;padding-inline:3vw;padding-top:2em;margin-bottom:30px;color:orange" class="container">Como a Confidence Construtora, valorizamos:</h2>
-    <section class="container" style="padding-bottom: 4em; padding-inline: 3vw; gap: 10px; display: grid;">
-      <p>
-        Ser uma empresa líder em referência no setor da construção civil, atendendo as demandas com uma estrutura competente e otimizada que nos permita enfrentar novos desafios e continuar a superar as expectativas de nossos clientes, possibilitando assim um crescimento sólido e a consequente expansão de nossas atividades.
-      </p>
-      <p>
-        Realizar obras industrias e empreendimentos imobiliários com qualidade e ser na indústria da construção civil, uma empresa referência em qualidade
-      </p>
-    </section>
-  </div>
+</div>
 
-  <div class="container" style="margin-bottom: 45px;">
-    <p>
-      Você pode conhecer nossos trabalhos através de nosso <a href="/portfolio"><i>portfólio</i></a>
-      <br/>
-      Ou entrar em contato por <a href="mailto:contato@construtoraconfidence.com">email</a> e <a href="tel:+5577988043876">telefone: (77)98804-3876</a>
-    </p>
-    <h4>
-      Abaixo com algumas frases inspiradores
-    </h4>
-  </div>
-
-  {{ partial "testimonial.html" . }}
+  
   
   {{ partial "contactAddress.html" . }}
+
+  {{ partial "testimonial.html" . }}
 {{end}}
